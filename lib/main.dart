@@ -1,6 +1,7 @@
 
 // import 'package:example/home_page_provider.dart';
 import 'package:example/home_page_state_provider.dart';
+import 'package:example/user_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -24,7 +25,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: const HomePageProvider(),
-      home: const HomePageStateProvider(),
+      // home: const HomePageStateProvider(),
+      home: UserScreen(),
     );
   }
 }
