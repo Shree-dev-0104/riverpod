@@ -1,11 +1,13 @@
+//  P R O V I D E R  P A T T E R N
+
 import 'package:example/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 // class HomePage extends ConsumerWidget { // Method 2: Using ConsumerWidget
 //   const HomePage({super.key});
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class HomePageProvider extends StatelessWidget {
+  const HomePageProvider({super.key});
 
   @override
   Widget build(BuildContext context) {

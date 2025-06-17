@@ -1,9 +1,11 @@
 
-import 'package:example/home_page.dart';
+// import 'package:example/home_page_provider.dart';
+import 'package:example/home_page_state_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final nameProvider = Provider<String>((ref) => 'Minu');
+final nameStateProvider = StateProvider<String?>((ref) => null); // Providers are usually immutable, but StateProvider allows for mutable state.
 
 void main() {
   runApp( const ProviderScope(
@@ -21,7 +23,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      // home: const HomePageProvider(),
+      home: const HomePageStateProvider(),
     );
   }
 }
