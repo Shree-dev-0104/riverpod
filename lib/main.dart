@@ -1,5 +1,6 @@
 
 // import 'package:example/home_page_provider.dart';
+import 'package:example/Future%20Provider/joke_screen.dart';
 import 'package:example/home_page_state_provider.dart';
 import 'package:example/user_screen.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +27,8 @@ class MyApp extends StatelessWidget {
       ),
       // home: const HomePageProvider(),
       // home: const HomePageStateProvider(),
-      home: UserScreen(),
+      // home: UserScreen(),
+      home : const JokeScreen()
     );
   }
 }
